@@ -1,0 +1,21 @@
+/* Footer */
+.foot-soc-links li {
+  display: inline;
+  margin: 0.5rem;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: rgb(209, 208, 208);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}

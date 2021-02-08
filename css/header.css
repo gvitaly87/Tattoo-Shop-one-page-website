@@ -1,0 +1,283 @@
+/* Header */
+/* TODO: add parallax effect */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 1fr;
+  height: 100vh;
+  background: right / contain no-repeat url("../assets/images/lg/AngelOnBackTattoo.webp"), #000;
+}
+
+/* logo */
+.logo-img {
+  width: 200px;
+
+}
+
+/* Navigation */
+/* TODO: anchor the navbar to the viewport */
+.ham-toggle {
+  position: absolute;
+  right: 0;
+  margin: 1rem;
+  color: hsl(330, 10%, 100%);
+  font-size: 3rem;
+  display: none;
+}
+
+.main-nav {
+  grid-column: 1/ -1;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+.navigation li a {
+  padding: 1rem;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+
+  transition-property: background-color;
+  transition-timing-function: ease-out;
+  transition-duration: .5s;
+}
+
+.navigation a:hover {
+  color: hsl(0, 60%, 40%);
+  background-color: hsl(330, 10%, 100%);
+  border-bottom: 3px solid hsl(0, 60%, 40%);
+}
+
+.login {
+  color: white;
+  background-color: hsl(0, 60%, 40%);
+}
+
+.mob-soc-links {
+  display: none;
+  margin: 1rem;
+
+}
+
+.mob-soc-links a {
+  margin: .5rem;
+}
+
+/* Main Headline */
+.main-headline {
+  padding-bottom: 2rem;
+
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  grid-template-rows: repeat(4, auto);
+  justify-items: end;
+
+  align-self: center;
+}
+
+.main-headline h1 {
+  align-self: end;
+  justify-self: end;
+
+  color: white;
+
+  margin: 0;
+
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.main-headline div {
+  color: white;
+
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.logo {
+  grid-row: 1;
+  grid-column: 1 /-1;
+  justify-self: end;
+  padding-right: 100px;
+}
+
+.main-headline .vertical {
+  color: hsl(0, 60%, 40%);
+  background-color: hsl(330, 10%, 100%);
+  padding: 18px 3px;
+
+  grid-row: 2/-1;
+  grid-column: 2;
+
+  writing-mode: vertical-lr;
+}
+
+.main-headline .sub-headline {
+  align-self: start;
+  justify-self: end;
+
+  text-align: right;
+  font-size: 2rem;
+}
+
+.main-headline .sub-headline-story {
+  font-size: 3.5rem;
+}
+
+.call-to-action {
+  justify-self: end;
+}
+
+.call-to-action a {
+  color: white;
+  background-color: hsl(0, 60%, 40%);
+
+  padding: 1rem;
+  margin: 20px 10px;
+  border: 3px solid white;
+  border-radius: 10px;
+
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: none;
+  font-variant: small-caps;
+
+  transition: all .5s;
+}
+
+.call-to-action a:hover {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Header Social Icons */
+.head-soc-links {
+  margin-top: 2rem;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.head-soc-links li {
+  display: inline;
+}
+
+.head-soc-links a {
+  margin: auto 1.5rem;
+}
+
+.head-soc-links a:hover i {
+  color: hsl(0, 50%, 70%);
+  transform: scale(1.2);
+}
+
+.head-soc-links i,
+.mob-soc-links i {
+  color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width:1150px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .main-headline {
+    justify-self: center;
+    align-self: end;
+  }
+
+  .main-headline h1 {
+    padding: 0;
+  }
+
+  .logo {
+    justify-self: start;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .hero {
+    display: block;
+  }
+
+  .hero h1 {
+    padding-left: 0;
+  }
+
+  /* Show hamburger menu */
+  .ham-toggle {
+    display: block;
+  }
+
+  /* Align headline to the bottom of the viewport */
+  .navigation {
+    display: none;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    display: block;
+  }
+
+  .main-headline {
+    position: absolute;
+    bottom: 20px;
+  }
+
+  /* Resize logo and move to the right */
+  .logo {
+    padding: 0;
+    justify-self: end;
+  }
+
+  .logo-img {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .main-headline {
+    grid-template-columns: 1fr 50px;
+  }
+
+  .main-headline nav {
+    grid-column: 3/4;
+    grid-row: 1/-1;
+  }
+
+  .head-soc-links {
+    flex-direction: column;
+  }
+
+  .head-soc-links li {
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .main-headline nav {
+    display: none;
+  }
+
+  .mob-soc-links {
+    display: inline-block;
+  }
+
+  .mob-soc-links li {
+    display: inline-block;
+  }
+
+}
+
+/* TODO: figure out best layout based on aspect ratio  */

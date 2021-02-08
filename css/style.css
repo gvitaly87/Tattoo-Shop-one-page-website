@@ -1,0 +1,44 @@
+/* General */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Spartan',
+    sans-serif;
+}
+
+a,
+p,
+li {
+  font-family: 'Montserrat',
+    sans-serif;
+  font-size: 1.2rem;
+}
+
+p {
+  margin-bottom: 1.3rem;
+  line-height: 1.3rem;
+}
+
+strong {
+  font-weight: bold;
+  color: hsl(0, 60%, 40%);
+}
+
+em {
+  font-style: italic;
+}
+
+/* Utilities */
+.red-on-white {
+  color: hsl(0, 60%, 40%);
+  background-color: hsl(330, 10%, 100%);
+}

@@ -1,0 +1,202 @@
+/* Main */
+
+main h2 {
+  font-size: 2em;
+  padding: 10px;
+}
+
+.about,
+.price {
+  display: grid;
+  padding-top: 20px;
+  grid-template-columns: 1fr 1fr;
+  background-color: hsl(330, 10%, 100%);
+}
+
+/* About Section */
+.about div {
+  background: url("../assets/images/lg/TattooShopBW.webp"),
+    #000;
+}
+
+.ver-sec-head {
+  color: hsl(0, 60%, 40%);
+  background-color: hsl(330, 10%, 100%);
+
+  padding: 18px 3px;
+  writing-mode: vertical-lr;
+
+}
+
+/* aligning the headline to the center of the page and the right of the div element */
+.about div {
+  position: relative;
+}
+
+.about .ver-sec-head {
+  position: absolute;
+  right: 0;
+}
+
+.about article {
+  padding: 50px;
+}
+
+.about p {
+  max-width: 700px;
+}
+
+/* Prices Section */
+.price div {
+  background: url("../assets/images/lg/InkingTattooBW.webp"),
+    #000;
+  order: 2;
+}
+
+.hr-rates {
+  font-family: 'Montserrat',
+    sans-serif;
+}
+
+.hr-rates th {
+  font-size: 1.7rem;
+  padding: 1rem;
+}
+
+.hr-rates td {
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.about div,
+.price div {
+  min-height: 400px;
+  /*TODO: Add Gradient on both sides*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* Artists - Cards Section */
+.artists-wrap {
+  margin-top: 20px;
+
+  background-image: url(../assets/images/lg/ChestTattooBW.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.artists-wrap h2 {
+  display: inline-block;
+
+  color: hsl(0, 60%, 40%);
+  background-color: hsl(330, 10%, 100%);
+}
+
+.artists {
+  max-width: 1600px;
+  padding: 1rem;
+  margin: auto auto 2rem auto;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.artist {
+  min-width: 20ch;
+  max-width: 400px;
+  border-radius: 20px;
+  margin: 2rem;
+
+  color: white;
+  background-color: rgb(80, 80, 80);
+
+  overflow: hidden;
+  transition: all .25s ease-in-out;
+}
+
+.artist-img {
+  min-height: 300px;
+  border-radius: 6px 6px 0px 0px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.75;
+}
+
+/* Using background images instead of images */
+.artist-img1 {
+  background-image: url('../assets/images/lg/artist3.webp');
+}
+
+.artist-img2 {
+  background-image: url('../assets/images/lg/artist1.webp');
+}
+
+.artist-img3 {
+  background-image: url('../assets/images/lg/artist2.webp');
+}
+
+.artist h3 {
+  display: inline-block;
+  padding: 1rem;
+
+  color: hsl(0, 60%, 40%);
+  background-color: white;
+}
+
+.artist p {
+  font-size: 1rem;
+  padding: 2.5rem;
+}
+
+.artist:hover {
+  transform: scale(1.1);
+  background-color: hsl(0, 60%, 40%);
+}
+
+.artist:hover h3 {
+  display: block;
+  background: linear-gradient(45deg, white 40%, hsl(0, 60%, 40%));
+}
+
+/* Responsive Design */
+@media screen and (max-width:976px) {
+  .artists-wrap {
+    background: black;
+  }
+}
+
+@media screen and (max-width:850px) {
+
+  /* Changing grid for the main content to one column */
+  .about,
+  .price {
+    display: block;
+  }
+
+  .hr-rates {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .about .ver-sec-head {
+    left: 0;
+    right: auto;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .artists {
+    padding: 0;
+  }
+
+  .artist {
+    margin: 1rem;
+  }
+}

@@ -1,0 +1,73 @@
+.img-gal h2 {
+  color: hsl(0, 60%, 40%);
+}
+
+.img-gal-container {
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+}
+
+.gal-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.gal-fig1,
+.gal-fig6,
+.gal-fig9,
+.gal-fig10 {
+  grid-row: span 2;
+}
+
+.gal-fig7,
+.gal-fig8,
+.gal-fig11 {
+  grid-column: span 2;
+}
+
+.gal-fig2 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gal-fig {
+  position: relative;
+  max-height: 100vh;
+}
+
+.gal-fig figcaption {
+  display: none;
+  padding: 1rem;
+  width: 100%;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background-color: white;
+
+  font-size: 2rem;
+  text-align: center;
+}
+
+.gal-fig:hover figcaption {
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  .gal-fig {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  /* Making figcaps visible on mobile */
+  .gal-fig figcaption {
+    display: block;
+
+    bottom: 0;
+    top: auto;
+  }
+}
