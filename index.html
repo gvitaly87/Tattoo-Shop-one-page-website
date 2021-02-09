@@ -118,7 +118,7 @@
       </div>
     </section>
         <section id="contact">
-      <section class="forum-container" id="book-form">
+      <section class="form-container" id="book-form">
         <h2>Get in touch</h2>
         <p>If you have any questions or would like to book an appointment send us a line</p>
         <form
@@ -142,8 +142,10 @@
             <i class="fas fa-edit fa-2x"></i>
             <textarea name="message" placeholder="Your Message" required></textarea>
           </label>
-          <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Send Message</button>
-          <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+          <div class="btn-wrap">
+            <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+          </div>
         </form>
       </section >
       <section class="contact-info">
