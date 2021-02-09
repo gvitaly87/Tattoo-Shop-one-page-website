@@ -5,6 +5,10 @@
   gap: 1rem;
 }
 
+.img-gal {
+  padding-top: 2rem;
+}
+
 .gal-img {
   object-fit: cover;
   width: 100%;
