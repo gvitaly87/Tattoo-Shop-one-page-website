@@ -1,6 +1,5 @@
 .contact-info {
   color: white;
-  background-color: hsl(0, 3%, 17%);
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
@@ -34,6 +33,10 @@
   .contact-info article {
     grid-row: 1/2;
   }
+
+  .md-map {
+    justify-self: right;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -48,4 +51,5 @@
   .contact-info {
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   }
+
 }

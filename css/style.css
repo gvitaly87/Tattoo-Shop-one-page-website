@@ -42,9 +42,3 @@ strong {
 em {
   font-style: italic;
 }
-
-/* Utilities */
-.red-on-white {
-  color: hsl(0, 60%, 40%);
-  background-color: hsl(330, 10%, 100%);
-}
