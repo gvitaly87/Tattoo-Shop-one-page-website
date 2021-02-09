@@ -149,7 +149,7 @@
   border-radius: 10px;
 
   font-size: 1.2rem;
-  font-size: clamp(1.2rem, 5vw, 1.5rem);
+  font-size: clamp(1.0rem, 5vw, 1.2rem);
 
   text-decoration: none;
   text-transform: none;
@@ -272,7 +272,7 @@
   }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 470px) {
   .main-headline nav {
     display: none;
   }
