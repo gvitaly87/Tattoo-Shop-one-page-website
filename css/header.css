@@ -15,7 +15,6 @@
 }
 
 /* Navigation */
-/* TODO: anchor the navbar to the viewport */
 .ham-toggle {
   position: absolute;
   right: 0;
@@ -40,7 +39,7 @@
   font-size: 1.4rem;
   text-decoration: none;
   color: white;
-  border-radius: 10px;
+  border-radius: 1rem;
 
   transition-property: background-color;
   transition-timing-function: ease-out;
@@ -89,6 +88,8 @@
   margin: 0;
 
   font-size: 4rem;
+  font-size: clamp(3rem, 5vw, 5rem);
+
   text-transform: uppercase;
   text-align: right;
 }
@@ -97,6 +98,8 @@
   color: white;
 
   font-size: 2.5rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+
   text-transform: uppercase;
 }
 
@@ -124,10 +127,14 @@
 
   text-align: right;
   font-size: 2rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+
 }
 
 .main-headline .sub-headline-story {
   font-size: 3.5rem;
+  font-size: clamp(3rem, 5vw, 4rem);
+
 }
 
 .call-to-action {
@@ -144,6 +151,8 @@
   border-radius: 10px;
 
   font-size: 1.2rem;
+  font-size: clamp(1.2rem, 5vw, 1.5rem);
+
   text-decoration: none;
   text-transform: none;
   font-variant: small-caps;

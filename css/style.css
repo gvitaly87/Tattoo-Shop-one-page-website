@@ -26,6 +26,7 @@ li {
   font-family: 'Montserrat',
     sans-serif;
   font-size: 1.2rem;
+  font-size: clamp(1rem, 3vw, 1.3rem);
 }
 
 p {

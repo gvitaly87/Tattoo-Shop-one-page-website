@@ -46,6 +46,7 @@
   background-color: hsl(0, 3%, 17%);
 
   font-size: 2rem;
+  font-size: clamp(1.7rem, 5vw, 2rem);
   text-align: center;
 }
 
