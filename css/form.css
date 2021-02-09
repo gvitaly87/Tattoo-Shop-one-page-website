@@ -1,0 +1,55 @@
+.forum-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* width: 100vw; */
+  height: 100vw;
+
+  background-color: rgb(37, 37, 37);
+  color: white;
+
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form label {
+  padding: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: rgb(37, 37, 37);
+  color: white;
+
+  margin-left: 1rem;
+  min-width: 40ch;
+
+  font-size: 1.1rem;
+  font-family: 'Montserrat',
+    sans-serif;
+}
+
+::placeholder {
+  color: rgb(236, 236, 236);
+}
+
+.contact-form .btn {
+  padding: 1rem;
+
+  background-color: green;
+  color: white;
+
+  font-size: 1.1rem;
+  font-family: 'Montserrat',
+    sans-serif;
+}
+
+.contact-form .cancel {
+  background-color: red;
+}

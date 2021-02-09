@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: hsl(0, 3%, 17%);
+  color: white;
+}
+
 h1,
 h2,
 h3,
@@ -30,7 +35,7 @@ p {
 
 strong {
   font-weight: bold;
-  color: hsl(0, 60%, 40%);
+  color: hsl(0, 45%, 68%);
 }
 
 em {

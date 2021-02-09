@@ -1,10 +1,10 @@
-# CPNT260 - Assignment 3: Image gallery and social icons
+# CPNT260 - Assignment 4: Hero section
 ## General Information
 * Course: CPNT-260 Web Page Construction Fund.
 * Author: [Vitaly Gins](https://github.com/gvitaly87) - Repository owner and maintainer.
 * Github Links:
-  * [GH repo](https://github.com/gvitaly87/cpnt260-a3)
-  * [GH Pages site](https://gvitaly87.github.io/cpnt260-a3/)
+  * [GH repo](https://github.com/gvitaly87/cpnt260-a4)
+  * [GH Pages site](https://gvitaly87.github.io/cpnt260-a4/)
 ### Context
 The website is designed for an established, yet fictional, tattoo parlour in Calgary. The site is a first draft of a responsive one page website. The tattoo parlour's main goal is to attract new customers and provide them with contact information.
 
@@ -16,10 +16,6 @@ The webpage would include a call to action, about information, contact informati
 * ~~Add a script to animate hamburger menu~~
 * Add login/sign-up
 
----
-
-## Honorable Mentions
-* Kyle Welsh - Proofreading the gallery
 ---
 
 ## Attributions
@@ -57,3 +53,8 @@ The webpage would include a call to action, about information, contact informati
 * TattooShopLogo.svg and TattooShopLogo.png vector designed by dgim-sudio on [Freepik](http://www.freepik.com)
   * [Freepik License](http://www.freepik.com/terms_of_use)
 
+### APIs and third party services
+* The embedded map is made using the Google [Maps Embed API](https://developers.google.com/maps/documentation/embed/get-started)
+  * [Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+* The form submission is processed using Formspree
+  * [Terms of use](https://formspree.io/legal/terms-of-service)

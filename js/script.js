@@ -7,3 +7,11 @@ function toggleHam() {
     navMenu.style.display = "block";
   }
 }
+
+function openForm() {
+  document.getElementById("book-form").style.display ="block";  
+}
+
+function closeForm() {
+  document.getElementById("book-form").style.display ="none";  
+}

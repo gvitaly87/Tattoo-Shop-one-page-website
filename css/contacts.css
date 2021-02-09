@@ -1,0 +1,51 @@
+.contact-info {
+  color: white;
+  background-color: hsl(0, 3%, 17%);
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  justify-content: center;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-info li {
+  padding: 1rem;
+}
+
+.contact-info li i {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.md-map,
+.sm-map {
+  justify-self: center;
+}
+
+.sm-map {
+  display: none;
+}
+
+@media screen and (max-width: 1216px) {
+  .contact-info article {
+    grid-row: 1/2;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .sm-map {
+    display: block;
+  }
+
+  .md-map {
+    display: none;
+  }
+
+  .contact-info {
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  }
+}

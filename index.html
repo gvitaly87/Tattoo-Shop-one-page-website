@@ -10,8 +10,10 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/form.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/gallery.css">
+  <link rel="stylesheet" href="./css/contacts.css">
   <link rel="stylesheet" href="./css/footer.css">
   <script src="./js/script.js"></script>
   <title>Tattoo Shop - Calgary's best ink</title>
@@ -40,7 +42,7 @@
       <h1>Tattoo Shop</h1>
       <div class="vertical red-on-white">Our Ink</div>
       <div class="sub-headline">Your <span class="sub-headline-story">Story</span></div>
-      <div class="call-to-action"><a href="#">Book an appointment</a></div>
+      <div class="call-to-action"><a href="#" onclick="openForm()">Book an appointment</a></div>
       <nav>
         <ul class="head-soc-links">
           <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-official fa-3x"></i></a></li>
@@ -115,6 +117,51 @@
         </article>
       </div>
     </section>
+        <section id="contact">
+      <section class="forum-container" id="book-form">
+        <h2>Get in touch</h2>
+        <p>If you have any questions or would like to book an appointment send us a line</p>
+        <form
+          action="https://formspree.io/f/mjvpzzwl"
+          method="POST"
+          class= "contact-form"
+        >
+          <label>
+            <i class="fas fa-user fa-2x"></i>
+            <input type="text" name="name" placeholder="Your Name" required>
+          </label>
+          <label>
+            <i class="fas fa-at fa-2x"></i>
+            <input type="text" name="_replyto" placeholder="Your Email" required>
+          </label>
+          <label>
+            <i class="fas fa-phone fa-2x"></i>
+            <input type="text" name="phone-num" placeholder="Your Phone Number" required>
+          </label>
+          <label>
+            <i class="fas fa-edit fa-2x"></i>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+          </label>
+          <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+        </form>
+      </section >
+      <section class="contact-info">
+        <iframe class="md-map" width="600" height="450" frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJieUjXiBpcVMR1jbvR9BVJZM&key=AIzaSyAQh7yC4icoGDY2JMdNILwH9RDnBd1sGRw" allowfullscreen></iframe>
+        <iframe class="sm-map" width="300" height="300" frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJieUjXiBpcVMR1jbvR9BVJZM&key=AIzaSyAQh7yC4icoGDY2JMdNILwH9RDnBd1sGRw" allowfullscreen></iframe>
+        <article>
+          <h2>Contact Us</h2>
+          <ul>
+            <li><i class="fas fa-clock fa-2x"></i> M-F 10:00am - 8:00pm</li>
+            <li><a href="tel:1-403-555-1234"><i class="fas fa-phone fa-2x"></i> 403-555-1234</a></li>
+            <li><a href="mailto:vitaly.gins@gmail.com"><i class="fas fa-envelope fa-2x"></i> vitaly.gins@gmail.com</a></li>
+            <li><a href="https://goo.gl/maps/u7VyTpqVqY2VzZ2x8"><i class="fas fa-location-arrow fa-2x"></i>1829 Ranchlands Blvd NW Calgary,&nbsp;AB&nbsp;T3G&nbsp;2A7 </a></li>
+          </ul>
+        </article>
+      </section>
+    </section>
     <section class="img-gal" id="gallery">
       <h2>Featured Work</h2>
       <div class="img-gal-container">
@@ -163,17 +210,6 @@
           <figcaption>Place holder image taken from Pexels</figcaption>
         </figure>
       </div>
-    </section>
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <ul>
-        <li><i class="fas fa-clock fa-2x"></i> M-F 10:00am - 8:00pm</li>
-        <li><a href="tel:1-403-555-1234"><i class="fas fa-phone fa-2x"></i> 403-555-1234</a></li>
-        <li><a href="mailto:vitaly.gins@gmail.com"><i class="fas fa-envelope fa-2x"></i> vitaly.gins@gmail.com</a></li>
-        <li><a href="https://goo.gl/maps/u7VyTpqVqY2VzZ2x8"><i class="fas fa-location-arrow fa-2x"></i>1829 Ranchlands Blvd NW Calgary, AB T3G 2A7 </a></li>
-      </ul>
-      <iframe width="600" height="450" frameborder="0" style="border:0"
-src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJieUjXiBpcVMR1jbvR9BVJZM&key=AIzaSyAQh7yC4icoGDY2JMdNILwH9RDnBd1sGRw" allowfullscreen></iframe> 
     </section>
   </main>
   <footer>
