@@ -4,9 +4,11 @@ function toggleHam() {
 }
 
 function openForm() {
-  document.getElementById("book-form").style.display ="block";  
+  const formElem = document.querySelector(".form-container");
+  formElem.classList.remove("hidden");
 }
 
 function closeForm() {
-  document.getElementById("book-form").style.display ="none";  
+  const formElem = document.querySelector(".form-container");
+  formElem.classList.add("hidden");
 }
