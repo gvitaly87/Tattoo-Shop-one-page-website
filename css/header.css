@@ -139,7 +139,7 @@
   justify-self: end;
 }
 
-.call-to-action a {
+.call-to-action button {
   color: white;
   background-color: hsl(0, 60%, 40%);
 
@@ -158,7 +158,7 @@
   transition: all .5s;
 }
 
-.call-to-action a:hover {
+.call-to-action button:hover {
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -225,10 +225,14 @@
 
   /* Align headline to the bottom of the viewport */
   .navigation {
-    display: none;
+    display: block;
     flex-flow: column wrap;
     justify-content: space-around;
     padding: 0;
+  }
+
+  .hidden {
+    display: none;
   }
 
   .navigation a {

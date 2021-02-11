@@ -22,7 +22,7 @@
   <header class="hero">
     <nav class="main-nav">
       <a class="ham-toggle" onclick="toggleHam()"><i class="fas fa-bars"></i></a>
-      <ul class="navigation" id="navigation">
+      <ul class="navigation hidden">
         <li><a href="#about">About</a></li>
         <li><a href="#artists">Artists</a></li>
         <li><a href="#gallery">Gallery</a></li>
@@ -42,8 +42,7 @@
       <h1>Tattoo Shop</h1>
       <div class="vertical red-on-white">Our Ink</div>
       <div class="sub-headline">Your <span class="sub-headline-story">Story</span></div>
-      <!-- TODO: switch link to a button -->
-      <div class="call-to-action"><a href="#" onclick="openForm()">Book an appointment</a></div>
+      <div class="call-to-action"><button onclick="openForm()">Book an appointment</button></div>
       <nav>
         <ul class="head-soc-links">
           <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-official fa-3x"></i></a></li>
@@ -163,7 +162,7 @@
             <li><a href="https://goo.gl/maps/u7VyTpqVqY2VzZ2x8"><i class="fas fa-location-arrow fa-2x"></i>1829 Ranchlands Blvd NW Calgary,&nbsp;AB&nbsp;T3G&nbsp;2A7 </a></li>
           </ul>
           <!-- TODO: switch link to a button -->
-          <div class="call-to-action"><a href="#" onclick="openForm()">Book an appointment</a></div>
+          <div class="call-to-action"><button onclick="openForm()">Book an appointment</button></div>
         </article>
       </section>
     </section>
@@ -229,15 +228,5 @@
     </nav>
     <p>Copyright &copy; <time datetime="2021-01-29">2021</time> <a href="mailto:vitaly.gins@gmail.com" target="_self">Vitaly&nbsp;Gins</a>. All rights reserved.</p>
   </footer>
-  <!-- Listener function to remove the inline HTML style from the navigation menu when resized to a width larger than 700px -->
-  <script>
-    window.addEventListener("resize", function(){
-        var navMenu = document.getElementById("navigation");
-        var windowSize = window.innerWidth;
-        if (windowSize > 700) {
-          navMenu.style.display = null;
-        }
-    });
-    </script>
 </body>
 </html>
