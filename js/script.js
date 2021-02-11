@@ -5,10 +5,10 @@ function toggleHam() {
 
 function openForm() {
   const formElem = document.querySelector(".form-container");
-  formElem.classList.remove("hidden");
+  formElem.classList.remove("hidden-form");
 }
 
 function closeForm() {
   const formElem = document.querySelector(".form-container");
-  formElem.classList.add("hidden");
+  formElem.classList.add("hidden-form");
 }
