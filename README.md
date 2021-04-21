@@ -1,10 +1,10 @@
-# CPNT260 - Assignment 4: Hero section
+# Tattoo Shop - One Page Website
 ## General Information
 * Course: CPNT-260 Web Page Construction Fund.
 * Author: [Vitaly Gins](https://github.com/gvitaly87) - Repository owner and maintainer.
 * Github Links:
-  * [GH repo](https://github.com/gvitaly87/cpnt260-a4)
-  * [GH Pages site](https://gvitaly87.github.io/cpnt260-a4/)
+  * [GH repo](https://github.com/gvitaly87/Tattoo-Shop-one-page-website)
+  * [GH Pages site](https://gvitaly87.github.io/Tattoo-Shop-one-page-website)
 ### Context
 The website is designed for an established, yet fictional, tattoo parlour in Calgary. The site is a first draft of a responsive one page website. The tattoo parlour's main goal is to attract new customers and provide them with contact information.
 
